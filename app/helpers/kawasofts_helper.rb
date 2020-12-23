@@ -1,0 +1,2 @@
+module KawasoftsHelper
+end
