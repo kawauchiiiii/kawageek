@@ -1,3 +1,439 @@
-// Place all the styles related to the kawasofts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+@charset "utf-8";
+
+/*===================================
+			全エリア共通
+=====================================*/
+html{
+	min-height:100%;
+	position:relative;
+	overflow-x:hidden;
+}
+
+
+body{
+	width:100%;
+	min-width:1000px;
+	height:auto;
+	background:url("common/bg.jpg") repeat;
+	overflow-x:hidden;
+}
+
+
+/*----------------------------------------------------
+	ナビ
+----------------------------------------------------*/
+
+#navi{
+	width: 100%;
+    height: 68px;
+    top: 0;
+    left: 0;
+	background:url(../images/navi/navi_bg.png) repeat-x;
+	position:fixed;
+	left:4px;
+	z-index:100;
+}
+
+#navi .bt{
+	width:116px;
+	height:80px;
+	float:left;
+	position:relative;
+	opacity:0.7;
+	
+}
+
+
+#navi .bt.on{
+	opacity:1;
+}
+
+#navi .bt:hover{
+	opacity:1;
+	
+}
+
+
+#navi .navi_sns{
+	width:138px;
+	height:80px;
+	float:left;
+	position:relative;
+}
+	
+#navi .navi_sns .twitter,
+#navi .navi_sns .facebook,
+#navi .navi_sns .line{
+	float:left;
+	margin-left:6px;
+	margin-top:23px;
+	position:relative;
+	left:9px;
+}
+
+#navi .navi_sns img:hover{
+	opacity:0.65;
+}
+
+
+/*----------------------------------------------------
+	footer
+----------------------------------------------------*/
+
+footer{  /*親　html */
+	width:100%;
+	min-width:1000px;
+	height:150px;
+	background:url("footer/footer_bg.jpg") repeat;
+	position:absolute;
+	bottom:-215px;
+	z-index:100;
+}
+
+
+/*ナビ*/
+.footer_navi{
+	width:100%;
+	height:75px;
+	background:url(../images/footer/navi_bg.jpg) repeat-x;
+	position: absolute;
+	bottom: 0;
+	z-index:100;
+}
+
+
+.footer_navi .area{
+	width:1000px;
+	height:75px;
+}
+
+.footer_navi #navi{
+	width:1000px;
+	height:75px;
+	margin:0px auto;
+	background:none;
+	position:relative;
+	z-index:100;
+}
+
+.footer_navi #navi .bt {
+    float: left;
+    width: auto;
+    height: auto;
+    margin-left: 14px;
+    margin-top: 22px;
+	opacity:1;
+}
+
+.footer_navi #navi .bt:hover{
+	opacity:0.65;
+}
+
+.footer_navi #navi .navi_sns {
+    width: 138px;
+    height: 75px;
+    float: left;
+    position: relative;
+	top:-3px;
+}
+
+/*リンク*/
+
+.links{
+	height:49px;
+	margin:35px auto 25px auto;
+    padding-left: 296px;
+}
+
+.link_bn{
+	float:left;
+	margin-left:15px;
+}
+
+.footer_text p{
+	color:#fff;
+	margin-bottom:8px;
+	text-align:center;	
+	font-size: 12px;
+}
+.copylight{
+	color:#fff;
+	text-align: center;
+}
+
+/*===================================
+	　 	　ストーリー
+=====================================*/
+
+#story .story_area{
+	margin:10px auto;
+	width:980px;
+	height:4000px;
+	position:relative;
+	left:16px
+}
+
+#story .story_area div{
+	position:absolute;
+}
+
+.story_header{
+	top: 150px;
+	left: 0px;
+	width: 1280px;
+	height: 150px;
+}
+
+.story_text_1{
+	top: 300px;
+	left: 160px;
+	width: 660px;
+	height: 43px;
+	animation: fadeInRightBig;
+    animation-duration: 2s;
+}
+.story_text_2{
+	top: 443px;
+	left: 199px;
+	width: 582px;
+	height: 159px;
+	animation: fadeInLeftBig;
+    animation-duration: 3s;
+}
+
+.story_text_3{
+	top: 758px;
+	left: 493px;
+	width: 295px;
+	height: 43px;
+	animation: fadeInUp;
+    animation-duration: 10s;
+}
+
+.story_text_4{
+	top: 901px;
+	left: 353px;
+	width: 574px;
+	height: 169px;}
+
+.story_text_5{
+	top: 1170px;
+	left: 382px;
+	width: 517px;
+	height: 170px;
+	}
+
+.story_text_6{
+	top: 1440px;
+	left: 453px;
+	width: 374px;
+	height: 44px;
+    }
+
+.hukidasi_1{
+	top: 1584px;
+	left: 170px;
+	width: 608px;
+	height: 170px;}
+
+.story_text_7{
+	top: 1954px;
+	left: 342px;
+	width: 597px;
+	height: 106px;}
+
+.hukidasi_2{
+	top: 2160px;
+	left: 500px;
+	width: 610px;
+	height: 170px;}
+
+.story_text_8{
+	top: 2530px;
+	left: 351px;
+	width: 619px;
+	height: 115px;}
+
+.hukidasi_3{
+	top: 2745px;
+	left: 170px;
+	width: 608px;
+	height: 170px;}
+
+.story_text_9{
+	top: 3115px;
+	left: 396px;
+	width: 488px;
+	height: 106px;}
+
+.story_text_10{
+	top: 3321px;
+	left: 371px;
+	width: 579px;
+	height: 106px;}
+
+.story_text_11{
+	top: 3527px;
+	left: 371px;
+	width: 579px;
+	height: 106px;}
+
+.story_text_12{
+	top: 3733px;
+	left: 550px;
+	width: 242px;
+	height: 79px;}
+
+
+
+
+#character .character_area{
+	margin:10px auto;
+	width:1280px;
+	height:1300px;
+	position:relative;
+	left:16px
+}
+	
+#character .character_area div{
+	position:absolute;
+}
+
+.chara_1 ,.chara_2 ,.chara_3{
+	top: 130px;
+	left: 330px;
+	width: 460px;
+	height: 870px;
+	animation: fadeInUp;
+    animation-duration: 2s;}
+
+.serif_1 ,.serif_2 ,.serif_3{
+	top: 130px;
+	left: 165px;
+	width: 145px;
+	height: 869px;
+	animation: fadeInLeft;
+    animation-duration: 2s;}
+
+.catch_1 ,.catch_2 ,.catch_3{
+	top: 130px;
+	left: 730px;
+	width: 355px;
+	height: 41px;
+	animation: fadeInRight;
+    animation-duration: 3s;}
+
+.name_1 ,.name_2 ,.name_3{
+	top: 221px;
+	left: 749px;
+	width: 141px;
+	height: 195px;
+	animation: fadeInRight;
+    animation-duration: 3s;}
+
+.cv_1 ,.cv_2{
+	top: 366px;
+	left: 889px;
+	width: 221px;
+	height: 50px;
+	animation: fadeInRightBig;
+    animation-duration: 2s;}
+
+.voice_1_1 ,.voice_2_1 ,.voice_3_1{
+	top: 466px;
+	left: 810px;
+	width: 61px;
+	height: 65px;
+	animation: fadeInRight;
+    animation-duration: 2s;}
+
+.voice_1_2 ,.voice_2_2 ,.voice_3_2{
+	top: 466px;
+	left: 890px;
+	width: 61px;
+	height: 65px;
+	animation: fadeInRight;
+    animation-duration: 2s;}
+
+.voice_1_3 ,.voice_2_3 ,.voice_3_3{
+	top: 466px;
+	left: 970px;
+	width: 61px;
+	height: 65px;
+	animation: fadeInRight;
+    animation-duration: 2s;}
+
+.voice_1_4 ,.voice_2_4 ,.voice_3_4{
+	top: 466px;
+	left: 1050px;
+	width: 61px;
+	height: 65px;
+	animation: fadeInRight;
+    animation-duration: 2s;}
+
+
+
+
+
+.selfproduce_1{
+	top: 581px;
+	left: 730px;
+	width: 380px;
+	height: 270px;
+	text-align: left;
+	font: normal normal normal 20px/30px Meiryo;
+	letter-spacing: 0px;
+	color: #707070;
+	opacity: 1;
+	animation: fadeInUp;
+    animation-duration: 4s;}
+
+.sd_1_1{
+	top: 1100px;
+	left: 330px;
+	width: 140px;
+	height: 140px;}
+
+.sd_1_2{
+	top: 1100px;
+	left: 570px;
+	width: 140px;
+	height: 140px;}
+
+.sd_1_3{
+	top: 1100px;
+	left: 810px;
+	width: 140px;
+	height: 140px;}
+
+
+
+
+	#top_content .top_content_area{
+		margin:10px auto;
+		width:1280px;
+		height:1600px;
+		position:relative;
+		left:16px
+	}
+		
+	#top_content .top_content_area div {
+		position:absolute;
+	}
+
+.twitter_a {
+	top: 581px;
+	left: 730px;
+	width: 380px;
+	height: 270px;
+
+
+		width: 280px;
+		height: 600px;
+		border-radius: 10px;
+		background-color: #ffffff;
+		overflow: hidden;
+	  }
+
+
+	

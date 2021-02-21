@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: euler_production
-  username: euler
-  password: <%= ENV['EULER_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5

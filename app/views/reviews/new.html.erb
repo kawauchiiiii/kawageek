@@ -1,0 +1,34 @@
+<h1>レビュー</h1>
+<h3>新規Tweet</h3>
+<%= form_for @review do |f| %>
+  <div class="field">
+    <%= f.label :一言感想 %>
+    <%= f.text_field :title, :size => 100 %>
+    <%= f.label :ペンネーム%>
+    <%= f.text_field :penname, :size => 80%>
+    <%= f.label :長文感想%>
+    <%= f.text_field :body, :size => 140 %>
+
+ 
+<div class="post_form">
+ <%= f.radio_button :star, 5 ,id: 'star1'%>
+ <label for="star1"><span class="text">最高</span>★</label>
+
+ <%= f.radio_button :star, 4 ,id: 'star2'%>
+ <label for="star2"><span class="text">良い</span>★</label>
+
+ <%= f.radio_button :star, 3 ,id: 'star3'%>
+ <label for="star3"><span class="text">普通</span>★</label>
+
+ <%= f.radio_button :star, 2 ,id: 'star4'%>
+ <label for="star4"><span class="text">悪い</span>★</label>
+
+ <%= f.radio_button :star, 1 ,id: 'star5'%>
+ <label for="star5"><span class="text">最悪</span>★</label>
+</div>
+
+  </div>
+  <%= f.submit "投稿する" %>
+<% end %>
+<%= link_to "一覧に戻る", reviews_index_path %>
+
